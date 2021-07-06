@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/css/toastr.min.css">
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            background-color: #181A1B;
+
+            overflow: hidden;
+        }
+
+        #lineLoginButton {
+            background-color: #00B400;
+            color: #F7F7F7;
+        }
+
+        #lineInfoContainer {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+
+        #lineLogoutButton {
+
+        }
+
+        #toast-container {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+
+        #exportNotesChatTodo {
+            background: #409EFF;
+            color: #F7F7F7;
+        }
+
+        .noteContainer {
+            display: flex;
+        }
+
+        .deleteContainer {
+            width: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="lineInfoContainer">
+            <button id="deleteAllNotesButton">Delete all notes</button>
+            <button id="exportNotesChatTodo">Export notes to chatTodo</button>
+            <button id="lineLoginButton">Line Login</button>
+            <button id="lineLogoutButton" disabled>Logout</button>
+        </div>
+        <div> Categories </div>
+        <div id="categoriesContainer"></div>
+        <div> Notes </div>
+        <div id="notesContainer"></div>
+    </div>
+    <script src="./lib/jquery-3.6.0.min.js.js"></script>
+    <script src="./lib/toastr.min.js"></script>
+    <script src="./lib/axios.min.js"></script>
+    <script src="./lib/swal.min.js"></script>
+    <script src="./options_script.js"></script>
+</body>
+
+</html>

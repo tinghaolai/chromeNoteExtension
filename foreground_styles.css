@@ -1,0 +1,30 @@
+#addNoteForm {
+    background-color: #303133;
+    position: fixed;
+    top: 200px;
+    width: 300px;
+    z-index: 50000;
+}
+
+#messageDiv {
+    background-color: #F56C6C;
+    position: fixed;
+    right: 50px;
+    bottom: 200px;
+    width: 300px;
+    height: 50px;
+}
+
+#messageSpan {
+    color: white;
+}
+
+
+#optionPageLink {
+    position: fixed;
+    top: 50px;
+    right: 100px;
+    background-color: #409EFF;
+    color: white;
+    z-index: 100000;
+}

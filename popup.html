@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 250px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            font-size: 30px;
+            background-color: #181A1B;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        目前功能
+        <button id="foregroundAllFeatureSwitch">---</button>
+    </div>
+    <div>
+        預設類別
+        <input type="text" id="defaultCategoryInput" list="defaultCategoryList">
+        <datalist id="defaultCategoryList">
+            <option id="noDefaultCategoryList">無預設值</option>
+        </datalist>
+        <button id="defaultCategoryButton">送出</button>
+        <div>
+            Opacity (add form)
+            <input type="number" id="opacityAddNoteFormInput">
+            <button id="opacityAddNoteFormButton">送出</button>
+        </div>
+    </div>
+
+    <script src="./lib/jquery-3.6.0.min.js.js"></script>
+    <script src="./lib/toastr.min.js"></script>
+    <script src="./popup_script.js"></script>
+</body>
+
+</html>
